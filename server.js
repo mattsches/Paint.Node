@@ -16,7 +16,7 @@ var server = http.createServer(function (req, res) {
         res.end(fs.readFileSync(__dirname + '/index.html'));
     }
 });
-server.listen(8000, '127.0.01');
+server.listen(8000, '127.0.0.1');
 
 console.log('Server läuft an http://127.0.0.1:8000/');
 
